@@ -6,10 +6,10 @@
   "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
   "files.exclude": {
     "**/*.js": {
-      "when": "$(basename).ts"
+      "when": "${workspaceFolder}/src/$(basename).ts"
     },
     "**/*.js.map": {
-      "when": "$(basename)"
+      "when": "${workspaceFolder}/src/$(basename)"
     }
   },
   "prettier.tslintIntegration": true
