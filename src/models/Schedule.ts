@@ -11,12 +11,12 @@ export class Schedule extends Model {
 Schedule.init(
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
-    fkRoom: { type: DataTypes.INTEGER },
-    startAt: { type: DataTypes.DATE },
-    endAt: { type: DataTypes.DATE },
+    fkRoomId: { type: DataTypes.INTEGER },
+    startAt: { type: 'TIMESTAMP' },
+    endAt: { type: 'TIMESTAMP' }
   },
   {
     sequelize,
-    tableName: 'Room',
+    tableName: 'Schedule',
   },
 );

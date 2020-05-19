@@ -7,6 +7,7 @@ export class Room extends Model {
   public active: boolean;
   public name: string;
   public fkPortId: number;
+  public isSchedule: boolean;
 }
 
 Room.init(
@@ -16,6 +17,7 @@ Room.init(
     active: { type: DataTypes.BOOLEAN },
     name: { type: DataTypes.STRING },
     fkPortId: { type: DataTypes.INTEGER },
+    isSchedule: { type: DataTypes.BOOLEAN }
   },
   {
     sequelize,
